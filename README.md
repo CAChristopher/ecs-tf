@@ -14,7 +14,7 @@ We now use an s3 bucket to store current infrastructure states. You can use the 
 ```bash
 terraform remote config \
 -backend=s3 \
--backend-config="bucket=tf-state-test" \
+-backend-config="bucket=mah_bucket" \
 -backend-config="key=datacenter/d1/<repo>/terraform.tfstate" \
 -backend-config="region=us-west-2"
 ```
